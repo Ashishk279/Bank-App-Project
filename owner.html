@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Workplace</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar_home">
+        <img class="nav_img" src="./images/icon.png" alt="Logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item list">
+                    <a class="nav-link" aria-current="page" href="./landingPage.html">Home</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="./home.html">Login Account</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="./landingPage.html#services">Services</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="./landingPage.html#contact">Contact Us</a>
+                </li>
+
+            </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn wallet_btn me-md-2" type="button" id="Wallet_btn">Connect Wallet</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="details">
+        <h6 id="MetamaskAccountDetails1"></h6><br>
+        <h6 id="MetamaskAccountDetails2"></h6><br>
+        <h6 id="MetamaskAccountDetails3"></h6><br>
+        <h6 id="MetamaskAccountDetails4"></h6>
+
+
+    </div>
+    </details>
+    <div class="container2">
+        <div class="deposit">
+            <h4 class="home_h3">Deposit Funds</h4>
+
+            <div class="container my-3">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="number" placeholder="Enter a amount" id="inputField1" class="form-control"
+                        aria-label="Dollar amount (with dot and two decimal places)" />
+                </div>
+                <button type="button" class="btn deposit_btn" id="DepositFundByOwner">
+                    Deposit Funds By Owner
+                </button>
+            </div>
+        </div>
+        <div class="deposit">
+            <h4 class="home_h3">Approve Loan</h4>
+
+            <div class="container my-3">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Paste the address of Account</label>
+                    <input type="text" class="form-control" id="inputField9" aria-describedby="emailHelp">
+                </div>
+                <select id="Select_Loan_Type1" class="form-select my-3" aria-label="Default select example">
+                    <option selected>Select loan type</option>
+                    <option value="0">Personal Loan</option>
+                    <option value="1">Educational Loan</option>
+                    <option value="2">Business Loan</option>
+                    <option value="3">Home Loan</option>
+                </select>
+                <button type="button" class="btn deposit_btn" id="ApproveLoan">
+                    Approve Loan
+                </button>
+            </div>
+        </div>
+        <div class="deposit" id="ownerPage">
+            <h4 class="home_h3">Check Loan Appliers Details</h4>
+            <button type="button" class="btn deposit_btn" id="Applier">
+                applier detail
+            </button>
+            <div class="checkDetails">
+                <p class="Detail2" id="p"></p>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Decentralized Bank App. All rights reserved.</p>
+        <p>Contact us at: as98016767814@gmail.com</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+/* Home page */
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  /* background: url(./images/backgroun3.jpg) no-repeat center ;
+  background-size: cover; */
+}
+
+.navbar_home {
+  background: #9d9d9d;
+  position: fixed;
+  width: 100%;
+}
+
+.heading {
+  margin-top: 35px;
+  margin-left: 201px;
+  width: 70%;
+}
+
+.login_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #713697;
+  font-size: 68px;
+}
+
+.login_logo {
+  margin-left: 411px;
+  width: 90px;
+  height: 90px;
+}
+
+.nav_img {
+  width: 70px;
+  margin-left: 23px;
+}
+
+.list {
+  margin: 0px 25px;
+}
+
+.wallet_btn {
+  color: rgb(54 48 56);
+  border: 2px solid rgb(148 16 191);
+  margin-right: 10px;
+  margin-left: 290px;
+  background-color: #e4dce7;
+}
+
+.home_name,
+.home_amount {
+  color: rgb(128, 12, 166);
+  border: 2px solid rgb(128, 12, 166);
+  border-radius: 6px;
+  margin-left: 215px;
+  width: 330px;
+  z-index: 1;
+}
+
+.home {
+  margin-left: 261px;
+  margin-top: 36px;
+  padding-bottom: 100px;
+}
+
+.home_h2 {
+  text-align: center;
+  color: #ba12ff;
+  font-size: 55px;
+  font-weight: bold;
+  padding-top: 1%;
+}
+
+.create_h2 {
+  padding: 1%;
+}
+
+.home_h3 {
+  color: #164444;
+  font-weight: bold;
+}
+
+.home_btn {
+  color: rgb(128, 12, 166);
+  border: 2px solid rgb(128, 12, 166);
+  margin-left: 305px;
+  margin-top: 23px;
+}
+
+.home_btn1 {
+  color: rgb(128, 12, 166);
+  border: 2px solid rgb(128, 12, 166);
+  margin-left: 60%;
+}
+
+.home_p {
+  font-size: 12px;
+  margin-top: 56px;
+  color: #120636;
+  margin-left: 30%;
+}
+
+.home_a {
+  color: #713697;
+}
+
+.details {
+  padding-top: 85px;
+}
+
+#MetamaskAccountDetails2,
+#MetamaskAccountDetails1,
+#MetamaskAccountDetails3,
+#MetamaskAccountDetails4,
+#MetamaskAccountDetails5,
+#MetamaskAccountDetails6,
+#MetamaskAccountDetails7 {
+  position: absolute;
+  left: 639px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 53%;
+  color: rgb(137, 18, 222);
+}
+
+#login_btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.about {
+  background-size: cover;
+  height: 510px;
+  padding-top: 7%;
+}
+
+.about_h1 {
+  font-size: 79px;
+  margin-left: 47px;
+  color: #ac23bd;
+}
+
+.about_p {
+  margin-left: 141px;
+  color: #566060;
+  width: 60%;
+}
+
+.about_images {
+  display: flex;
+  justify-content: center;
+  height: 40%;
+  margin-top: 40px;
+}
+
+.about_image {
+  margin: 0 23px
+}
+
+.services_1 {
+  display: flex;
+  margin: 32px 90px;
+}
+
+.services_h1 {
+  color: #9b15ab;
+  margin: 0 12px;
+}
+
+.services_p {
+  color: #775a93;
+  margin: 0 23px;
+}
+
+.contact {
+  background: url(./images/contact.jpg)no-repeat center center;
+  background-size: cover;
+  padding-bottom: 7%;
+}
+
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+}
+
+.contact-form {
+  margin-bottom: 2rem;
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1c4d7;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: none;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    margin-bottom: 1rem;
+  }
+}
+
+.container2 {
+  display: flex;
+  padding: 1%;
+  margin-top: 23px;
+  justify-content: center;
+}
+
+.container3 {
+  display: flex;
+  padding: 1%;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.deposit {
+  padding: 34px 20px;
+  border: 2px solid #9242eb;
+  border-radius: 12px;
+  margin: 0px 12px;
+  width: 25%;
+}
+
+.deposit_btn {
+  border: 2px solid #962ce7;
+  color: #620662;
+}
+
+.loanApply {
+  margin-bottom: 7%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.checkDetails {
+  height: 121px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #d000e8;
+  padding: 12px;
+  color: #500491;
+  border-radius: 4px;
+  margin-top: 23px;
+}
+
+#Detail1,
+#Detail2,
+#Detail3,
+#Detail4,
+#Detail5,
+#Detail6,
+#Detail7,
+#Detail8,
+#Detail9,
+#Detail10,
+#Detail11,
+#Detail12,
+.Detail2 {
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-container {
+  max-height: 200px;
+  overflow: auto;
+  border: 2px solid #ad0090;
+}

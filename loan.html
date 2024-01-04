@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Information</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar_home">
+        <img class="nav_img" src="./images/icon.png" alt="Logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item list">
+                    <a class="nav-link" aria-current="page" href="./landingPage.html">Home</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="./home.html">Login Account</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="./account.html">Account Details</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="./landingPage.html#contact">Contact Us</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="container3">
+        <div class="deposit">
+            <h4 class="home_h3">Loan Apply</h4>
+
+            <div class="container my-3">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="number" placeholder="Enter the loan amount" id="inputField8" class="form-control"
+                        aria-label="Dollar amount (with dot and two decimal places)" />
+                </div>
+                <select id="SelectNumberOfMonths" class="form-select my-3" aria-label="Default select example">
+                    <option selected>Select number of months</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+                <select id="SelectLoanType" class="form-select my-3" aria-label="Default select example">
+                    <option selected>Select loan type</option>
+                    <option value="0">Personal Loan</option>
+                    <option value="1">Educational Loan</option>
+                    <option value="2">Business Loan</option>
+                    <option value="3">Home Loan</option>
+                </select>
+
+                <button type="button" class="btn deposit_btn" id="Loan_Apply">
+                    Loan Apply
+                </button>
+            </div>
+        </div>
+        <div class="deposit">
+            <h4 class="home_h3">Loan Repay</h4>
+            <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="number" placeholder="Enter the EMI amount" id="inputField10" class="form-control"
+                    aria-label="Dollar amount (with dot and two decimal places)" />
+            </div>
+
+            <div class="container my-3">
+                <select id="SelectLoanType2" class="form-select my-3" aria-label="Default select example">
+                    <option selected>Select loan type</option>
+                    <option value="0">Personal Loan</option>
+                    <option value="1">Educational Loan</option>
+                    <option value="2">Business Loan</option>
+                    <option value="3">Home Loan</option>
+                </select>
+                <button type="button" class="btn deposit_btn" id="LoanRepay">
+                    Loan Repay
+                </button>
+            </div>
+
+        </div>
+        <div class="deposit">
+            <h4 class="home_h3">Loan Details
+            </h4>
+            <div class="container my-3">
+                <select id="SelectLoanType4" class="form-select my-3" aria-label="Default select example">
+                    <option selected>Select loan type</option>
+                    <option value="0">Personal Loan</option>
+                    <option value="1">Educational Loan</option>
+                    <option value="2">Business Loan</option>
+                    <option value="3">Home Loan</option>
+                </select>
+                <button type="button" class="btn deposit_btn" id="CheckLoan">
+                    Check Details
+                </button>
+            </div>
+            <div class="checkDetails">
+                <span id="Detail1"></span><br>
+                <span id="Detail2"></span><br>
+                <span id="Detail3"></span><br>
+                <span id="Detail4"></span><br>
+                <span id="Detail5"></span><br>
+                <span id="Detail6"></span><br>
+                <span id="Detail7"></span><br>
+                <span id="Detail8"></span><br>
+                <span id="Detail9"></span><br>
+                <span id="Detail10"></span><br>
+                <span id="Detail11"></span><br>
+                <span id="Detail12"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Decentralized Bank App. All rights reserved.</p>
+        <p>Contact us at: as98016767814@gmail.com</p>
+    </footer>
+
+
+</body>
+
+</html>

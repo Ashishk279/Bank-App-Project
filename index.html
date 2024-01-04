@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Welcome to decentralized Bank App using Solidity and Web3.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar_home">
+        <img class="nav_img" src="./images/icon.png" alt="Logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item list">
+                    <a class="nav-link" aria-current="page" href="./landingPage.html">Home</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="login_btn">
+                <button class="btn  wallet_btn" id="login" type="button">Login</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="about" class="about">
+        <h1 class="about_h1">Decentralized Bank</h1>
+        <p class="about_p">A decentralized bank app, often referred to as a decentralized finance (DeFi) application, is
+            a financial application built on blockchain technology. Unlike traditional banks, which are centralized and
+            rely on intermediaries like banks and financial institutions, decentralized bank apps operate on open and
+            decentralized blockchain networks.</p>
+
+        <div class="about_images">
+            <img class="about_image" src="./images/image1.png" alt="image1">
+            <img class="about_image" src="./images/background2.webp" alt="image2">
+            <img class="about_image" src="./images/backgroun3.jpg" alt="image3">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="about_h1">Banking Services</h2>
+
+        <div class="services_1">
+            <div>
+                <h3 class="services_h1">Deposit:</h3>
+                <p class="services_p">Create a user-friendly interface where users can log in or connect their wallets
+                    using Web3 or a
+                    similar
+                    technology.
+                    Provide a "Deposit" button or form where users can enter the amount of cryptocurrency they want to
+                    deposit.
+                    Use a smart contract to handle the deposit transaction. The smart contract should record the user's
+                    deposit in a decentralized ledger.
+                    Ensure that the deposited funds are converted into the appropriate cryptocurrency format (e.g., wei
+                    for
+                    Ethereum) and stored securely in the user's account.</p>
+            </div>
+            <div>
+                <h3 class="services_h1">Withdraw:</h3>
+                <p class="services_p">Offer a "Withdraw" button or form in the user interface.
+                    Prompt users to enter the withdrawal amount and select the cryptocurrency they wish to withdraw (if
+                    applicable).
+                    Use the smart contract to process the withdrawal request. Verify that the user has sufficient funds
+                    in
+                    their account to cover the withdrawal.
+                    Execute the withdrawal by transferring the requested cryptocurrency to the user's external wallet
+                    address</p>
+            </div>
+            <div>
+                <h3 class="services_h1">Account Balances:</h3>
+                <p class="services_p">Display the user's account balance prominently on their dashboard after they log
+                    in.
+                    Ensure that the account balance is updated in real-time to reflect recent deposits, withdrawals, or
+                    interest accruals.
+                    Provide a "Refresh" or "Sync" button to manually update the balance if needed.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+
+        <h2 class="about_h1">Contact Us</h2>
+        <main>
+            <section class="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Decentralized Bank App. All rights reserved.</p>
+        <p>Contact us at: as98016767814@gmail.com</p>
+    </footer>
+    
+</body>

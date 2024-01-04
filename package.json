@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "web3": "^4.3.0"
+  },
+  "name": "bank-app",
+  "version": "1.0.0",
+  "main": "abi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
